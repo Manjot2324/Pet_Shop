@@ -1,6 +1,7 @@
 
 package org.example.petshop_cg.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,7 +26,7 @@ public class GroomingService {
     private Boolean available;
 
     @ManyToMany(mappedBy = "groomingServices")
+    @JsonIgnore
     private Set<Pet> pets;
 
-    // Getters and setters...
 }
