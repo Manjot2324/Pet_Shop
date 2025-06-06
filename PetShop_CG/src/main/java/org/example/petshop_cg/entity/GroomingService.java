@@ -2,11 +2,17 @@
 package org.example.petshop_cg.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
+
 import java.math.BigDecimal;
 import java.util.Set;
 
 @Entity
 @Table(name = "grooming_services")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class GroomingService {
 
     @Id
