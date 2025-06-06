@@ -1,6 +1,7 @@
 package org.example.petshop_cg.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,6 +30,7 @@ public class Address {
 
     // 🔗 One address can be used by many customers
     @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Customer> customers;
 
     // 🔗 One address can be used by many employees
