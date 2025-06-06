@@ -2,8 +2,11 @@
 package org.example.petshop_cg.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "pet_categories")
 public class PetCategory {

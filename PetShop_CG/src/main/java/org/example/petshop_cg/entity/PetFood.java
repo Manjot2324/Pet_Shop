@@ -2,9 +2,12 @@
 package org.example.petshop_cg.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "pet_food")
 public class PetFood {

@@ -2,7 +2,9 @@ package org.example.petshop_cg.entity;
 import java.util.Set;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 public class Customer {
 

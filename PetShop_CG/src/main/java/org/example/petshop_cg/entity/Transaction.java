@@ -2,9 +2,12 @@
 package org.example.petshop_cg.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Data
 @Entity
 @Table(name = "transactions")
 public class Transaction {
@@ -14,7 +17,7 @@ public class Transaction {
     private int transactionId;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "customerId")
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToOne

@@ -2,10 +2,12 @@
 package org.example.petshop_cg.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "employees")
 public class Employee {
