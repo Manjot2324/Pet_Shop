@@ -39,7 +39,7 @@ public class TransactionController {
     }
 
     private TransactionDto mapToDto(Transaction t) {
-        Integer customerId = (t.getCustomer() != null) ? t.getCustomer().getCustomerId() : null;
+        Integer customerId = (t.getCustomer() != null) ? t.getCustomer().getCustomer_id() : null;
         Integer petId = (t.getPet() != null) ? t.getPet().getPetId() : null;
         String status = (t.getTransactionStatus() != null) ? t.getTransactionStatus().name() : null;
 
